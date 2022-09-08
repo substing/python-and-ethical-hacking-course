@@ -21,5 +21,5 @@ def print_result(results_list):
 
 
 
-scan_result = scan("192.168.1.1/24")
+scan_result = scan("")
 print_result(scan_result)
