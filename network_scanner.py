@@ -20,6 +20,6 @@ def print_result(results_list):
 		print(client["ip"] + "\t\t" + client["mac"])
 
 
-
+#put your target address in between the "" below.
 scan_result = scan("")
 print_result(scan_result)
