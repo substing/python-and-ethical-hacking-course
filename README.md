@@ -13,7 +13,7 @@ This is a simple script which uses `scapy` in order to find the MAC addresses of
 This is a variation of the network scanner which uses `optparse` to get arguments for target IP addresses or target IP ranges. There is also a help menu, and a `header()` function to make it a bit prettier. 
 
 ##  network_scanner_python3.py 
-This file is another variation on the network scanner. This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). The function should still be the same. 
+This file is another variation on the network scanner. This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). 
 
 ## arp_spoof.py
 This is an ARP spoofer. It will send packets to the gateway and the target using `scapy` and run until a keyboard interrupt. At this point, it will restore the ARP table.
