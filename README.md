@@ -14,3 +14,6 @@ This is a variation of the network scanner which uses `optparse` to get argument
 
 ##  network_scanner_python3.py 
 This file is another variation on the network scanner. This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). The function should still be the same. 
+
+## arp_spoof.py
+This is an ARP spoofer. It will send packets to the gateway and the target using `scapy` and run until a keyboard interrupt. At this point, it will restore the ARP table.
