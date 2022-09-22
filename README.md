@@ -7,7 +7,7 @@ I will be updating this as I complete the course.
 This requires sudo privilege. It is a command line application. It uses `optparse` to get arguments, and then `subprocess` to run the required commands in the Linux Shell. It then uses `re` to check if the MAC address has been changed correctly. 
 
 ##  network_scanner.py 
-This is a network scanner which works over either individual IPs or ranges. This uses `subprocess` to run the required commands in the Linux Shell. It then uses `re` to check if the MAC address has been changed correctly.This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). 
+This is a network scanner which works over either individual IPs or ranges. This uses `subprocess` to run the required commands in the Linux Shell. It then uses `re` to check if the MAC address has been changed correctly. This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). 
 
 ## assignment1.py
 This is a variation of the network scanner which uses `optparse` to get arguments for target IP addresses or target IP ranges. There is also a help menu, and a `header()` function to make it a bit prettier. 
