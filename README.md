@@ -13,5 +13,7 @@ This is a network scanner which works over either individual IPs or ranges. This
 This is a variation of the network scanner which uses `optparse` to get arguments for target IP addresses or target IP ranges. There is also a help menu, and a `header()` function to make it a bit prettier. 
 
 ## arp_spoof.py
-This is an ARP spoofer. It will send packets to the gateway and the target using `scapy` and run until a keyboard interrupt. At this point, it will restore the ARP table.
+This is an ARP spoofer. It will send packets to the gateway and the target using `scapy` and run until a keyboard interrupt. At this point, it will restore the ARP table. Ideas for future projects include rewriting this program to take user input, likely using `argparse`, and also potentially enable automatic port forwarding. 
 
+## packet_sniffer.py
+This is a process that will intercept packets that flow through the host machine. It prints `HTTP`requests and particualarily any traffic that looks like it could be usernames or passwords. This can be run concurrently with the `arp_spoof.py` in order to execute a [man in the middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack). Note that this program seems to only capture `HTTP` traffic and not `HTTPS`. It also only has 6 keywords to look for as potential usernames and passwords. A future project can be to expand the list, as well as to filter out more traffic. 
