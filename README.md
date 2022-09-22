@@ -9,7 +9,7 @@ This requires sudo privilege. It is a command line application. It uses `optpars
 ##  network_scanner.py 
 This is a network scanner which works over either individual IPs or ranges. This version uses the `argparse` library instead of `optparse`. If you are curious why we would want to do this, you can [read more](https://stackoverflow.com/questions/3217673/why-use-argparse-rather-than-optparse). 
 
-### assignment1.py
+## assignment1.py
 This is a variation of the network scanner which uses `optparse` to get arguments for target IP addresses or target IP ranges. There is also a help menu, and a `header()` function to make it a bit prettier. 
 
 ## arp_spoof.py
