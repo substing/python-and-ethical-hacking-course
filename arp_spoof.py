@@ -2,6 +2,10 @@
 import scapy.all as scapy
 import time
 
+print("----{ Be sure to enable port forwarding on host machine! }----\n")
+print("---{ Command: sudo sysctl -w net.ipv4.ip_forward=1 }---\n\n")
+
+
 def get_mac(ip):
 	arp_request = scapy.ARP(pdst = ip)
 	broadcast = scapy.Ether(dst = "ff:ff:ff:ff:ff:ff")
